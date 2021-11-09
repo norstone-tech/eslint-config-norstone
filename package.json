@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-norstone",
-	"version": "1.0.0-beta.0",
+	"version": "1.0.0-beta.1",
 	"description": "ARitz Cracker's ESLint config, published under the Norstone Technologies name to appear slightly more legit.",
 	"main": "index.js",
 	"scripts": {
@@ -17,11 +17,13 @@
 		"url": "https://github.com/norstone-tech/eslint-config-norstone/issues"
 	},
 	"homepage": "https://github.com/norstone-tech/eslint-config-norstone#readme",
+	"dependencies": {
+		"eslint-plugin-node": "^11.1.0"
+	},
 	"peerDependencies": {
 		"eslint": ">=8.2.0"
 	},
 	"devDependencies": {
-		"eslint": ">=8.2.0",
-		"eslint-plugin-node": "^11.1.0"
+		"eslint": ">=8.2.0"
 	}
 }

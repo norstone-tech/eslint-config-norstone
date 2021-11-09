@@ -43,7 +43,7 @@ module.exports = {
 		"no-empty-character-class": "error",
 		"no-empty-pattern": "error",
 		"no-ex-assign": "error",
-		"no-fallthrough": ["error", {commentPattern: "falls?[\\s]*through"}],
+		"no-fallthrough": ["error", {commentPattern: "[Ff]alls?\\s*through"}],
 		"no-func-assign": "error",
 		"no-import-assign": "error",
 		"no-inner-declarations": "error",
@@ -84,7 +84,7 @@ module.exports = {
 		complexity: ["warn", 15], // TODO: test this out
 		"consistent-return": "warn",
 		"consistent-this": ["error", "that"], // This is probably obsolete now that we have magical arrow funcs
-		curly: ["error", "multi", "consistent"],
+		curly: ["error", "all"],
 		"default-case": "error",
 		"dot-notation": ["error", {allowKeywords: false}],
 		"func-name-matching": ["error", "always"],
@@ -124,7 +124,10 @@ module.exports = {
 		"no-lonely-if": "error",
 		"no-loop-func": "error",
 		"no-magic-numbers": ["warn", {ignoreArrayIndexes: true, ignore: [1, 0]}],
-		"no-mixed-operators": "error",
+		"no-mixed-operators": [
+			"warn",
+			{allowSamePrecedence: true}
+		],
 		"no-multi-str": "error",
 		"no-negated-condition": "error",
 		"no-new": "error",
